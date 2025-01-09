@@ -1,0 +1,12 @@
+#!/bin/sh
+
+exec yt-dlp \
+  --format "bestaudio" \
+  --extract-audio \
+  --audio-format mp3 \
+  --convert-thumbnails jpg \
+  --embed-thumbnail \
+  --ppa "ThumbnailsConvertor+ffmpeg_o:-c:v mjpeg -vf crop=ih:ih" \
+  -o "%(title)s.%(ext)s" \
+  --format-sort "quality" \
+  "$@"
