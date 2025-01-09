@@ -2,4 +2,5 @@
 
 [ "$1" ]
 
-printf '#!/bin/sh\n' > "$1" && chmod 755 "$1"
+printf '#!/bin/sh\n' > "$1" 
+chmod 755 "$1"
