@@ -1,7 +1,6 @@
 #!/bin/sh
 
 exec mpv --shuffle \
-  --title=float \
   --geometry=400x400 \
   --loop-playlist \
-  "$HOME/Music/$*"
+  "$HOME/mus/$*"
