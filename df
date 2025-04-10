@@ -1,6 +1,0 @@
-#!/bin/sh
-
-exec git \
-  --git-dir=$HOME/git/dotfiles.git \
-  --work-tree=$HOME \
-  "$@"
