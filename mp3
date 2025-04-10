@@ -7,6 +7,6 @@ exec yt-dlp \
   --convert-thumbnails jpg \
   --embed-thumbnail \
   --ppa "ThumbnailsConvertor+ffmpeg_o:-c:v mjpeg -vf crop=ih:ih" \
-  -o "%(title)s.%(ext)s" \
+  --output "%(title)s.%(ext)s" \
   --format-sort "quality" \
   "$@"
